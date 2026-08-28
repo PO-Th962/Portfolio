@@ -14,20 +14,20 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "jsmob3688@gmail.com",
-    href: "mailto:[EMAIL_ADDRESS]",
+    value: "panithan.sewako.work@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=panithan.sewako.work@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+66 94-764-9978",
-    href: "tel:+66947649978",
+    value: "094-764-9978",
+    href: "tel:0947649978",
   },
   {
     icon: MapPin,
     label: "Location",
     value: "Chiangmai, Thailand.",
-    href: "#",
+    href: "https://maps.app.goo.gl/Y63He12C16htkWXn8",
   },
 ];
 
