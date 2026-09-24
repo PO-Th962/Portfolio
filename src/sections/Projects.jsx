@@ -1,5 +1,4 @@
-import { ArrowRight, ExternalLink, ShieldCheck } from "lucide-react";
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { ExternalLink, ShieldCheck } from "lucide-react";
 const projects = [
   {
     title: "Center Food - Intelligent Food Inventory Management System",
