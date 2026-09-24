@@ -1,4 +1,4 @@
-import { Button } from "@/components/button";
+import { Button } from "@/components/Button";
 import { ArrowRight, ChevronDown, Download } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { scrollToSection } from "../utils/scroll";
@@ -24,6 +24,13 @@ const skills = [
   "Docker",
 ];
 
+const particles = Array.from({ length: 30 }, (_, index) => ({
+  left: `${(index * 37) % 100}%`,
+  top: `${(index * 61) % 100}%`,
+  animation: `slow-drift ${15 + ((index * 7) % 20)}s ease-in-out infinite`,
+  animationDelay: `${(index * 1.3) % 5}s`,
+}));
+
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -39,16 +46,13 @@ export const Hero = () => {
 
       {/* Green Dots */}
       <div className="absolute inset-0 overflow-hidden pointer-event-none">
-        {[...Array(30)].map((_, i) => (
+        {particles.map((particle, i) => (
           <div
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             key={i}
             style={{
               backgroundColor: "#20B2A6",
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 5}s`,
+              ...particle,
             }}
           />
         ))}
