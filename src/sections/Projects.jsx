@@ -17,6 +17,7 @@ const projects = [
     ],
     link: "https://webtechcmru.info/",
     linkAdmin: "https://webtechcmru.info/admin/",
+    linkGit: "https://github.com/panithan-dev/Center-Food",
   },
 
   {
